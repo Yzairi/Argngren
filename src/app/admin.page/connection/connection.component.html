@@ -1,0 +1,26 @@
+<header>
+  <div class="container">
+    <h1>arngren</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Accueil</a></li>
+        <li><a routerLink="/admin">admin</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+</header>
+
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <label>
+    Email:
+    <input type="email" name="email" ngModel required>
+  </label>
+  <br>
+  <label>
+    Password:
+    <input type="password" name="password" ngModel required>
+  </label>
+  <br>
+  <button type="submit">Se connecter</button>
+</form>

@@ -1,0 +1,42 @@
+input,textarea{
+  border: 2px solid black;
+  margin-bottom: 10px;}
+h6,h2{
+  text-align: center;
+  font-size: xx-large;
+}
+p{
+  text-align: center;
+  font-size: x-small;
+}
+.form-check-label {
+  margin-bottom: 0;
+  color: black;
+}
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+}
+.btn-contact-form {
+  width: auto;
+  border-radius: 200px;
+  background: #1E75D3;
+  font-size: 20px;
+  color: #FFF !important;
+  border: 0px;
+  letter-spacing: 8px;
+  padding: 15px;
+}
+@media all and (max-width: 991px){
+ .btn-contact-form {
+  letter-spacing: 4px;
+  margin-left: 64%;
+ }
+}
+

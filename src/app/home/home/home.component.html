@@ -1,0 +1,42 @@
+<header>
+  <div class="container">
+    <h1>arngren</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Accueil</a></li>
+        <li><a routerLink="/admin">admin</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+</header>
+
+<main>
+  <div class="article "*ngFor="let article of articles" (click)="onClick(article)">
+    <ul>
+      <li>{{article.name}}</li>
+      <li><img src="{{article.image}}" alt=""></li>
+      <li>{{article.price}}</li>
+    </ul>
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Arngren</h3>
+        <p>07 07 07 07 07</p>
+        <p>Arngren.gmail.com</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a  href="#">Accueil</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

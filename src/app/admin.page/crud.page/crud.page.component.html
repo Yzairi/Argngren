@@ -1,0 +1,30 @@
+<header>
+  <div class="container">
+    <h1>arngren</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Accueil</a></li>
+        <li><a routerLink="/">admin</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+</header>
+
+<dx-data-grid [dataSource]="articles" keyExpr="id" [columns]="columns"
+(onRowRemoved)="onRowRemoved($event)"
+(onRowUpdated)="onRowUpdated($event)"
+(onRowInserted)="onRowInserted($event)"
+>
+  <dxo-editing
+  mode="row"
+  [allowAdding]="true"
+  [allowUpdating]="true"
+  [allowDeleting]="true"
+>
+</dxo-editing>
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [allowedPageSizes]="[5, 10, 20]" [showInfo]="true"></dxo-pager>
+
+</dx-data-grid>
+
